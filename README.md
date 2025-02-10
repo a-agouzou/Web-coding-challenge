@@ -1,24 +1,67 @@
-# Web Coding Challenge (full stack)
+# TaskFlow - MERN Stack Todo Application
 
-## Don't use AI 🚨
-If you want to risk using it, use it in a clever way that make your code clean and readable 
+A modern, responsive Todo List application built with the MERN stack (MongoDB, Express.js, React.js, and Node.js). TaskFlow provides an intuitive interface for managing tasks with basic CRUD operations.
 
-## Idea of the App 
-Build a simple "To-Do List" application with an admin panel.  This app will allow users to manage a list of tasks. 
-The admin panel will provide the interface to create, read, update, and delete (CRUD operations) these tasks.  
-Each task should have a title (required) and a completion status (e.g., "Pending" or "Completed").
+### 🎯 Features
+- Create, Read, Update, and Delete tasks
+- Mark tasks as complete/incomplete
+- Clean and modern UI with Tailwind CSS
+- Responsive design for all devices
+- Admin panel for task management
 
-## Technologies to Use
+### 🛠️ Built With
+- **Frontend:**
+  - React.js (with Vite)
+  - Tailwind CSS
+  
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB
 
-*   **MERN Stack:**
-    *   **MongoDB:** The database to store product data.  Consider using MongoDB Atlas for easy setup.
-    *   **Express.js:** The back-end framework for creating the API endpoints.
-    *   **React.js:** The front-end JavaScript library for building the user interface.
-    *   **Node.js:** The JavaScript runtime environment.
+### 📋 Prerequisites
+- Node.js
+- npm or yarn
+- MongoDB
 
-## Deliverables
+### ⚙️ Installation
 
-1.  **Forked Repository:** Fork this repository , and complete the challenge within their forked copy.
-2.  **Completed Code:**  The forked repository should contain the complete and functional project code.
-3.  **README Instructions:** A short README file Include small instructions .
-4.  **Reflection:** A brief (1 paragraph) written reflection on any challenges you faced . This should be included in the README
+1. Clone the repository
+```bash
+git clone https://github.com/a-agouzou/Web-coding-challenge taskflow
+cd taskflow
+cd frontend
+npm install
+
+cd ../backend
+npm install
+
+```
+
+2. Create a `.env` file in the `backend` directory and add the following environment variables:
+```
+MONGODB_URI=your_mongodb_uri
+PORT=5000
+```
+
+3. Create a `.env` file in the `frontend` directory and add the following environment variables:
+```
+VITE_API_URL=http://localhost:5000
+```
+
+4. Start the backend server
+```bash
+cd backend
+npm start
+```
+
+5. Start the frontend server
+```bash
+cd frontend
+npm start
+```
+
+6. Open your browser and visit `http://localhost:3000`
+
+### 💭 Reflection
+As a first-time MongoDB user, I learned to structure collections, use Mongoose for validation, and integrate MongoDB Atlas smoothly. The experience was straightforward and insightful
